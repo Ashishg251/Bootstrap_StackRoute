@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+
+		<div class="container" >
+			<div class="navbar navbar-fixed-top">
+				<div class="container" id="main">
+
+					<!-- nav menu when shrinking the webapge -->
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a href="/" class="navbar-brand"><img src="images/cloud.png" alt="Your Logo"></a>
+
+					<!-- nav bar elements -->
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav" aria-labelledby="dropdownMenuDivider">
+
+							<!-- first list item Home -->
+							<li class="active">
+								<a href="#"><span class="glyphicon glyphicon-home"> Home</span></a>
+							</li>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-th"> About Us</span></a>
+							</li>
+							<!-- 2nd List Item Services -->
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"> Services</span> <strong class="caret"></strong></a>
+								<!-- dropdown menu for services -->
+								<ul class="dropdown-menu">
+									<li><a href="#">Web development</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Domain &amp; Web Hosting</a></li>
+									<li class="divider"></li>
+									<li><a href="#">CCTV</a></li>
+									<li class="divider"></li>
+									<!-- <li class="dropdown-header">More Services</li> -->
+									<li><a href="#">Video Conferencing</a></li>
+									<li class="divider"></li>
+									<li><a href="#">HardWare &amp; Networking</a></li>
+								</ul>
+							</li>
+
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-briefcase"> Products</span></a>
+							</li>
+
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-list-alt"> Portfolio</span></a>
+							</li>
+
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-envelope"> Contact</span></a>
+							</li>
+
+						</ul> <!-- end nav -->
+
+						<!-- search this website button -->
+						<form class="navbar-form pull-left" id="id_navbar-form">
+							<input type="text"  class=" form-control" placeholder="Search this website..." id="searchInput">
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+						</form>  <!-- end navbar-form -->
+
+						<!-- My account dropdown -->
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<span class="glyphicon glyphicon-user"> My Account <strong class="caret"></strong></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> Refresh</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><span class="glyphicon glyphicon-off"></span> Sign Out</a></li>
+								</ul>
+							</li>
+						</ul> <!-- end nav pull-right -->
+
+					</div> <!-- end collapse -->
+				</div> <!-- end container -->
+			</div> <!-- end Navbar -->
+
+			<div class="carousel slide" id="myCarousel">
+						<!-- indicators(small circles at the end of the carousel) -->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+					<li data-slide-to="3" data-target="#myCarousel"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4>Cloud Computing</h4>
+						</div> <!-- end carousel-caption -->
+					</div> <!-- end carousel item -->
+
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>Structured Cabling</h4>
+						</div> <!-- end carousel-caption -->
+					</div> <!-- end carousel item -->
+
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4>Web Development</h4>
+						</div> <!-- end carousel-caption -->
+					</div> <!-- end carousel item -->
+
+					<div class="item" id="slide4">
+						<div class="carousel-caption">
+							<h4>Hardware and Networking</h4>
+						</div> <!-- end carousel-caption -->
+					</div> <!-- end carousel item -->
+				</div> <!-- end carousel-inner -->
+
+				<!-- controls i.e., the arrows appearing on the carousel for changing the slides -->
+				<a href="#myCarousel" class="left carousel-control" data-slide="prev"><span class="icon-prev"></span></a>
+				<a href="#myCarousel" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
+
+			</div> <!-- end carousel -->
+
+			<hr>
+
+			<div class="row" id="featuresHeading">
+				<div class="col-12">
+					<h2>More Services</h2>
+				</div><!-- end col-12 -->
+			</div><!-- end featuresHeading -->
+
+
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Cloud Computing</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/cloud-3.png" alt="Cloud Computing" class="img-responsive">
+
+						<p>With our IaaS, PaaS and SaaS buyer's guides we help you get started evaluating the top cloud computing solutions by outlining the key considerations as well as the pros, cons and risks that come along with them. Our goal is to streamline the evaluation process by providing an unbiased, analytical look at what the solutions offer and how they can benefit your organization.</p>
+
+						<a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-warning btn-block">Learn more on Cloud</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Security</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/security-3.png" alt="Security" class="img-responsive">
+
+						<p>CSC combines more than 40 years of experience in information security with leading tools and methods to support your security program and protect your operations. Our deep industry knowledge, our team of more than 1,800 security specialists, and our end-to-end solutions for traditional and next-generation technologies enable you to securely adapt as your business and risks change.</p>
+
+						<a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-danger btn-block">Make it more secure</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Mobility</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/mobility-3.png" alt="Mobility" class="img-responsive">
+
+						<p>Mobility represents the future: how enterprises interact with customers, employees, partners and machines as we increasingly access the Internet and control the world from the palm of our hands. CSC is one of the only companies in the world that can deliver an end-to-end set of mobility solutions, connecting your mobility strategy to every other technology initiative in your organization.</p>
+
+						<a href="http://getbootstrap.com/" target="_blank" class="btn btn-info btn-block">More Mobility</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+
+			<div class="row" id="bigCallOut">
+				<div class="col-lg-12">
+					<!-- Alert window popped when clicking on the button -->
+					<!-- <div class="alert alert-success alert-block fade in" id="successAlert">
+						<button class="close" type="button" id="close">&times;</button>
+						<h4>Sucess!</h4>
+						<p>You just want made this element displayed by jQuery.Click on the 'x' in the top right corner for closing the bad boy</p>
+					</div>  -->
+					<!-- end alert box -->
+
+					<!-- visible only in small devices -->
+					<!-- <div class="well well-small visible-sm">
+						<a href="#" class="btn btn-large btn-block btn-default">
+							<span class="glyphicon glyphicon-phone"></span> Give us a call
+						</a>
+					</div>  -->
+					<!-- end well-small -->
+
+					<div class="well" id="id_well">
+						<div class="col-lg-6" id="id_mycol-lg-7">
+							<img src="images/img-2.png" alt="Cloud Computing" class="img-responsive" align="middle">
+							<!-- <img src="images/img-2.png" alt="Cloud Computing" id="id_img-2" class="img-responsive"> -->
+						</div>
+						<div class="col-lg-6" id="id_mycol-lg-5">
+							<!-- <div class="page-header"> -->
+								<h1>Helping you find the right IT solutions</h1>
+								<p>CSC-IT specialises in offering small businesses a reliable and cost effective managed IT service. If your business has no one in place to manage your IT or you are looking to have your own IT setup without having to pay a full time IT administrator then look nowhere else when choosing your business IT support partner.</p>
+							<!-- </div> -->
+							<hr>
+								<a href="#" class="btn btn-large btn-primary" id="alertMe">Read More</a>
+						</div>
+
+					</div> <!-- end well -->
+				</div> <!-- end col-12 -->
+			</div> <!-- end bigCallOut -->
+
+			<hr>
+
+			<div class="row" id="moreInfo">
+				<div class="col-sm-6">
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"> <a href="#tab1" data-toggle="tab">Section 1</a> </li>
+							<li> <a href="#tab2" data-toggle="tab">Section 2</a> </li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h3> <span class="glyphicon glyphicon-map-marker"></span> Our location </h3>
+
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.568194330115!2d77.61172481482164!3d12.935451390879612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae144e0c7d418f%3A0x48d008360cebcde4!2sStackRoute!5e0!3m2!1sen!2sin!4v1448621833683" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+								<p>Our company's clientele is spread all over US, UK, London, Malaysia and Middle East. The service is notable for providing web application development services, e-commerce solutions, search engine optimization, content management systems, content writing and sms marketing to many companies worldwide.</p>
+								<p>We have highly talented web consultants, creative designers, skillful developers, content writers, search engine optimizers and internet marketing professionals who know how to deliver the best results.</p>
+							</div> <!-- end tab-pane 1 -->
+
+							<div class="tab-pane" id="tab2">
+								<h3> A secure IT solution </h3>
+
+								<img src="images/img1.png" class="thumbnail pull-left" id="myThumbnail-2">
+
+								<p>A complete IT solutions company which provides services of Professional Web Design, Internet Marketing. We offer complete IT solutions with consultancy services for any kind of business or industry.</p>
+								<p>Most businesses today face a rapidly changing business environment, intense global competition and extreme technological change. To remain competitive, businesses are compelled to implement and utilize advanced information technology solutions that enable them to quickly redesign their business processes.</p>
+								<p>Our working ideology is the dedication to provide top quality solutions by utilizing information technology as a strategic business tool, both domestically and internationally. We provide companies and individuals our high quality products and services and handle their business with great care to take it to a height of excellence.</p>
+
+								<!-- <hr>
+
+								<a href="#myModal" class="btn btn-warning" role="button" data-toggle="modal"> <span class="glyphicon glyphicon-hand-up"></span> Click for a Modal Window!</a>
+
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">&times;</button>
+
+												<h4 class="modal-title">A modal window</h4>
+											</div>  -->
+											<!-- end modal-header -->
+
+											<!-- <div class="modal-body">
+												<h4>Text in a modal</h4>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+												<h4>Popovers in a modal</h4>
+												<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it !" data-content="I knew you would.">Don't click this button</a>
+												<h4>Tooltips in a modal</h4>
+												<a href="" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip, and so should <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>
+
+												<hr>
+												<p><small class="text-muted">PS. This form don`t do anything. Just heads up</small></p>
+												<form action="" class="form-horizontal">
+													<div class="form-group">
+														<label for="inputName" class="col-lg-2 control-label">Name</label>
+														<div class="col-lg-10">
+															<input type="text" class="form-control" id="inputName" placeholder="Name">
+														</div>
+													</div>
+
+													<div class="form-group">
+														<label for="inputEmail" class="col-lg-2 control-label">Email</label>
+														<div class="col-lg-10">
+															<input type="Email" class="form-control" id="inputEmail" placeholder="Email">
+														</div>
+													</div>
+
+													<div class="form-group">
+														<label for="inputMessage" class="col-lg-2 control-label">Message</label>
+														<div class="col-lg-10">
+															<textarea type="text" class="form-control" id="inputMessage" placeholder="Message" rows=3></textarea>
+															<button class="btn btn-success pull-right" type="submit">Submit</button>
+														</div>
+													</div>
+												</form>
+											</div>  -->
+											<!-- end modal-body -->
+
+											<!-- <div class="modal-footer">
+												<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+												<button class="btn btn-primary" data-dismiss="modal" type="button">Save Changes</button>
+											</div>  -->
+											<!-- end modal-footer -->
+										<!-- </div>  -->
+										<!-- end modal-content -->
+									<!-- </div>  -->
+									<!-- end modal-dialog -->
+								<!-- </div>  -->
+								<!-- end myModal -->
+
+							</div> <!-- end tab-pane 2 -->
+						</div> <!-- end tab-content -->
+					</div> <!-- end tabbable -->
+				</div> <!-- end col-sm-6 -->
+
+				<div class="col-sm-6">
+					<h3>Solutions Overview</h3>
+					<p>Technokaar provides turnkey Web and IT Solutions to various kinds of businesses operating worldwide.</p>
+					<p>Our design and development services &amp; solutions are implemented taking into consideration Search Engine positioning and placements.</p>
+					<div class="list-group">
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">BigDecisions Business Solutions Platform</h4>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Platform for Information Value Management</h4>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">iSMART (integrated Social Media Analytics)</h4>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">BIGFrame</h4>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Techquarium</h4>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Behavioral BI</h4>
+						</a>
+					</div>
+				</div> <!-- end col-sm-6 -->
+			</div> <!-- end moreInfo -->
+
+			<hr>
+
+			<div class="row" id="moreCourses">
+				<div class="col-12">
+					<h3>More on IT Solutions</h3>
+					<div class="thumbnails row">
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/thumbnail-1.jpg" alt="Software Development">
+								<div class="caption">
+									<h3>Software Development</h3>
+									<p>A Software Solutions company founded with the aim of designing professional software and providing innovative solutions for our clients worldwide.</p>
+									<p>
+										<a href="#" class="btn btn-primary btn-small" target="_blank">Learn More</a>
+									</p>
+								</div> <!-- end caption -->
+							</div> <!-- end thumbnail -->
+						</div> <!-- end col-6 -->
+
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/thumbnail-2.png" alt="IT Consulting">
+								<div class="caption">
+									<h3>IT Consulting</h3>
+									<p>FHAPL is a synonym of one for all. We cater to almost all the requirements for a rock hard consultancy in all domains of the IT industry.</p>
+									<p>
+										<a href="#" class="btn btn-primary btn-small" target="_blank">Learn More</a>
+									</p>
+								</div> <!-- end caption -->
+							</div> <!-- end thumbnail -->
+						</div> <!-- end col-6 -->
+					</div> <!-- end row -->
+				</div> <!-- end col-12 -->
+			</div> <!-- end moreCourses -->
+
+		</div> <!-- end container -->
+
+		<footer>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+					<h6>Copyright &copy; 2013 {name}</h6>
+					</div><!-- end col-sm-2 -->
+
+					<div class="col-sm-4">
+						<h6>About Us</h6>
+						<p>Most businesses today face a rapidly changing business environment, intense global competition and extreme technological change. To remain competitive, businesses are compelled to implement and utilize advanced information technology solutions that enable them to quickly redesign their business processes. Since organizations often lack sufficient technical resources, most businesses are increasingly engaging experienced outside specialists to solve their problems in time and within budget.</p>
+						<p>As a result, the demand for information technology consultants has grown significantly worldwide.</p>
+					</div><!-- end col-sm-4 -->
+
+					<div class="col-sm-2">
+						<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+
+					<div class="col-sm-2">
+						<h6>Follow Us</h6>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+
+					<div class="col-sm-2">
+						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Ashish</h6>
+					</div><!-- end col-sm-2 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+
+		</footer>
+
+		<!-- All Javascript at the bottom of the page for faster page loading -->
+
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="includes/js/script.js"></script>
+
+	</body>
+</html>
