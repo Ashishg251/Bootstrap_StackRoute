@@ -37,7 +37,7 @@ Notes:	 Hand coded for Udemy.com
   	padding: 20px;
   }
 
-  #featuresHeading {
+  #p_id_featuresHeading {
     margin-top: 70px;
   }
 
@@ -110,6 +110,24 @@ Notes:	 Hand coded for Udemy.com
    .dropdown-menu li a {
      padding: 0;
    }
+
+   .dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.5s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+}
 
 /* --------------------------------------
    Carousel
@@ -264,6 +282,21 @@ Notes:	 Hand coded for Udemy.com
     margin: 0;
   }
 
+  .c_thumbnail_col-sm-4 {
+    text-align: center;
+  }
+
+  .c_thumbnail_col-sm-4 p {
+    text-align: justify;
+  }
+
+  .c_thumbnail_col-sm-4 img {
+  width: 100%;
+  }
+
+  #id_well, #id_well img {
+    width: 100%;
+  }
 
 }
 
@@ -273,7 +306,26 @@ Notes:	 Hand coded for Udemy.com
     text-align: center;
   }
 
+  /*#main a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }*/
+
 }
+
+@media (max-width: 1199px ) and (min-width: 768px){
+
+  #main a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #myCarousel, #p_id_featuresHeading {
+    margin-top: 150px;
+  }
+
+}
+
 
 /* Large desktop */
 @media (min-width: 1200px) {
@@ -295,5 +347,11 @@ Notes:	 Hand coded for Udemy.com
   #slide4 {
     background: url('../../images/HardwareNetworking.jpg') top center no-repeat;
   }
+
+  /*#main a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+*/
 
 }
