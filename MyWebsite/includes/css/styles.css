@@ -14,32 +14,34 @@ Notes:	 Hand coded for Udemy.com
    Layout
    -------------------------------------- */
 
-  #features {
-    text-align: center;
-  }
+    #features {
+      text-align: center;
+    }
 
-  #features p{
-    text-align: justify;
-  }
+    #features p{
+      text-align: justify;
+    }
 
-  #features img {
-    margin: 0 0 20px;
-  }
+    #features img {
+      margin: 0 0 20px;
+    }
 
-  #inputMessage {
-    margin-bottom : 10px;
-  }
+    #inputMessage {
+      margin-bottom : 10px;
+    }
 
-  footer {
-  	background: #333;
-  	color: #eee;
-  	font-size: 11px;
-  	padding: 20px;
-  }
+    footer {
+    	background: #333;
+    	color: #eee;
+    	font-size: 1em;
+    	padding: 20px;
+      text-align: justify;
+      //font-size:
+    }
 
-  #p_id_featuresHeading {
-    margin-top: 70px;
-  }
+    #p_id_featuresHeading {
+      margin-top: 70px;
+    }
 
 /* --------------------------------------
    Typography
@@ -111,23 +113,26 @@ Notes:	 Hand coded for Udemy.com
      padding: 0;
    }
 
-   .dropdown .dropdown-menu {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.5s;
+    .dropdown .dropdown-menu {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.5s;
 
-    max-height: 0;
-    display: block;
-    overflow: hidden;
-    opacity: 0;
-}
+      max-height: 0;
+      display: block;
+      overflow: hidden;
+      opacity: 0;
 
-.dropdown.open .dropdown-menu {
-    max-height: 300px;
-    opacity: 1;
-}
+      background-color: #eee;
+      left: 5px !important ;
+    }
+
+    .dropdown.open .dropdown-menu {
+      max-height: 300px;
+      opacity: 1;
+    }
 
 /* --------------------------------------
    Carousel
@@ -173,74 +178,74 @@ Notes:	 Hand coded for Udemy.com
    .alert {
      margin-top: 20px;
      display: none;
-  }
+    }
 
    .well{
     margin: 20px 0;
    }
 
-  .tabbable img.thumbnail {
-    margin: 0 20px 10px 0;
-  }
+    .tabbable img.thumbnail {
+      margin: 0 20px 10px 0;
+    }
 
-  .thumbnails {
-    margin :20px 0;
-  }
+    .thumbnails {
+      margin :20px 0;
+    }
 
-  .thumbnail {
-    position: relative;
-  }
+    .thumbnail {
+      position: relative;
+    }
 
-  .thumbnail h3 {
-    font-size: 16px;
-    margin: 0 0 10px;
-    line-height: 20px;
-  }
+    .thumbnail h3 {
+      font-size: 16px;
+      margin: 0 0 10px;
+      line-height: 20px;
+    }
 
-  .thumbnail .price {
-    font-size: 22px;
-    position: absolute;
-    top: -10px;
-    right: 10px;
-  }
+    .thumbnail .price {
+      font-size: 22px;
+      position: absolute;
+      top: -10px;
+      right: 10px;
+    }
 
-  .thumbnail .price sup {
-    font-weight: normal;
-    font-size: 12px;
-  }
+    .thumbnail .price sup {
+      font-weight: normal;
+      font-size: 12px;
+    }
 
-  .thumbnail span.glyphicon {
-    margin-right: 5px;
-  }
+    .thumbnail span.glyphicon {
+      margin-right: 5px;
+    }
 
-  #myThumbnail-1 {
-    border: none;
-    padding: 0;
-  }
+    #myThumbnail-1 {
+      border: none;
+      padding: 0;
+    }
 
-  #tab2 p {
-    text-align: justify;
-  }
+    #tab2 p {
+      text-align: justify;
+    }
 
-  #tab1 p {
-    text-align: justify;
-    margin-top: 10px;
-  }
+    #tab1 p {
+      text-align: justify;
+      margin-top: 10px;
+    }
 
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
 
 /* Portrait & landscape phone */
-@media (max-width: 480px) {
-  .thumbnail .price {
-    font-size: 14px;
-  }
+    @media (max-width: 480px) {
+      .thumbnail .price {
+        font-size: 14px;
+      }
 
-  .thumbnail .price sup {
-    font-size: 10px;
-  }
-}
+      .thumbnail .price sup {
+        font-size: 10px;
+      }
+    }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -306,22 +311,19 @@ Notes:	 Hand coded for Udemy.com
     text-align: center;
   }
 
-  /*#main a {
-    padding-left: 5px;
-    padding-right: 5px;
-  }*/
-
 }
 
 @media (max-width: 1199px ) and (min-width: 768px){
 
   #main a {
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 0px;
   }
 
-  #myCarousel, #p_id_featuresHeading {
-    margin-top: 150px;
+  #id_navbar-form {
+    visibility: hidden;
+    width: 0;
+    margin: 0;
   }
 
 }
@@ -347,11 +349,5 @@ Notes:	 Hand coded for Udemy.com
   #slide4 {
     background: url('../../images/HardwareNetworking.jpg') top center no-repeat;
   }
-
-  /*#main a {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-*/
 
 }
